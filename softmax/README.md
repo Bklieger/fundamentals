@@ -8,7 +8,7 @@ Example A: [1, 5, 6, 3]
 Example B: [-12, 120, -203, 2]
 ```
 
-However, we want to be able to standardize the output such that we can use it in a ML model. Specifically, one way we can compute loss is from a probability distribution (positive numbers that add to 1). In addition, looking at Examples A and B, it is difficult to understand how to compare A and B. This is why we need to normalize it.
+However, we want to be able to standardize the output such that we can use it in a ML model. Specifically, one way we can compute loss is from a probability distribution (positive numbers that add to 1). Put simpler, looking at Examples A and B, it is difficult to understand how to compare A and B. This is why we need to normalize it.
 
 Thus, we need to ensure there are only positive values, but do it in a way that retains the information. In other words, if we had [-100, 100] and wanted to convert these to positive values, simply taking the absolute value would result in [100, 100] which would lose the information provided by the negative sign. The signal that the original value was relatively small is lost.
 
